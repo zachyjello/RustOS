@@ -2,8 +2,7 @@
 name = "blog_os"
 version = "0.1.0"
 edition = "2018"
-
-[dependencies]
+authors = ["Zacharie Morin zachariemorin0@gmail.com"]
 
 # the profile used for `cargo build`
 [profile.dev]
@@ -12,3 +11,6 @@ panic = "abort" # disable stack unwinding on panic
 # the profile used for `cargo build --release`
 [profile.release]
 panic = "abort" # disable stack unwinding on panic
+
+[dependencies]
+bootloader = "0.9"
